@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Space invaders</title>
+        <script src="https://kit.fontawesome.com/0c51e38dcf.js" crossorigin="anonymous"></script>
+    
+    <script src="Index.js" type="module"></script>
+</head>
+<style>
+*{padding:0;
+margin:0;
+box-sizing:border-box;
+}
+body{position:relative;
+width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;}
+
+  .game{width:80vmin;
+  height:80vmin;
+  border:1px solid black;
+    box-shadow: 20px 20px 5px 5px;
+    display:grid;
+    grid-template-columns:repeat(11,1fr);
+    grid-template-rows:repeat(11,1fr);
+    transform:rotate(270deg);
+  }
+  .shoot{display:block;
+    position:absolute;
+  top:2em;
+  right:2em;
+  
+  width:30vmin;
+  height:30vmin;
+  }
+  i{font-size:30vmin;
+    display:block;
+  }
+  .joystick{position:absolute;
+  bottom:1.5em;
+  right:2em;
+  }
+  .starship{background:black;}
+  .invaders{background:yellow;
+  border-radius:50%;}
+  .shot{background:red;
+  border-radius:50%;
+  width:50%;
+  height:50%;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  }
+</style>
+<body>
+<div class="game">
+</div>
+<div class="shoot">
+  <i class="fas fa-bullseye"></i>
+</div>
+<div class="joystick">
+    <div class="moveup"><i class="far fa-arrow-alt-circle-up"></i></div>
+        <div class="movedown"><i class="far fa-arrow-alt-circle-down"></i></div>
+        </div>
+</body>
+
+</html>
